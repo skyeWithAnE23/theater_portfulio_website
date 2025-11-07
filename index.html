@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavin Dunn | Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #d3d3d3; /* soft silver-grey background */
+            color: #0d1b2a; /* deep blue-grey text */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e3a5f; /* deep navy blue */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.8em;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: #2b4c7e;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: all 0.2s ease-in-out;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            padding: 30px;
+        }
+
+        .top-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .headshot {
+            flex: 1;
+            max-width: 250px;
+            margin-right: 30px;
+        }
+
+        .headshot img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .bio {
+            flex: 2;
+        }
+
+        .bio h1 {
+            font-size: 2.2em;
+            margin: 0;
+        }
+
+        .bio h2 {
+            font-size: 1.3em;
+            margin-top: 5px;
+            color: #2b4c7e;
+        }
+
+        .bio p {
+            font-size: 1.05em;
+            margin: 10px 0;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            color: #1e3a5f;
+            border-bottom: 2px solid #2b4c7e;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .two-column {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .two-column > div {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 5px 0 0 20px;
+            padding: 0;
+        }
+
+        footer {
+            text-align: center;
+            color: #333;
+            font-size: 0.9em;
+            padding: 15px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Gavin Dunn</header>
+
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="top-section">
+            <div class="headshot">
+                <img src="headshot.jpg" alt="Headshot of Gavin Dunn">
+            </div>
+            <div class="bio">
+                <h1>Gavin Dunn</h1>
+                <h2>Actor • Technician • Storyteller</h2>
+                <p>Hey there! I’m a passionate theatre performer and technician with a love for storytelling, design, and creative collaboration. Whether I’m acting on stage, working behind the scenes, or exploring tech and scripting, I bring energy, curiosity, and a drive to create something memorable.</p>
+
+                <section>
+                    <h3>Upcoming Productions</h3>
+                    <ul>
+                        <li><b>Beetlejuice Jr</b> — Acting Up</li>
+                        <li><b>Urinetown</b> — CAST</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <h3>Awards</h3>
+                <ul>
+                    <li>Best Ensemble — MHS Drama</li>
+                    <li>Technical Excellence — Acting Up</li>
+                    <li>Outstanding Dedication — Royal Theatre</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Education</h3>
+                <ul>
+                    <li>Mason High School Drama Program</li>
+                    <li>Acting Up Community Theatre</li>
+                    <li>CAST Youth Theatre Workshops</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Stage Acting & Direction</li>
+                    <li>Lighting & Sound Operation</li>
+                    <li>Stage Management</li>
+                    <li>Costume & Set Design</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Currently Working On</h3>
+                <ul>
+                    <li>Bash scripting for Raspberry Pi automation 🎭💻</li>
+                    <li>Learning Java & Web Development</li>
+                    <li>Preparing for NCL cybersecurity competition</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Gavin Dunn | All Rights Reserved
+    </footer>
+</body>
+</html>
