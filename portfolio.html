@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Gavin Dunn</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #c8c8c8;
+      color: #0d1b2a;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e3a5f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.8em;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #2b4c7e;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      font-size: 1.1em;
+      transition: all 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav a.active {
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 100%;
+      margin: 30px 0;
+      padding: 0 0px;
+    }
+
+ .title {
+  text-align: center;
+  font-size: 3em; 
+  color: silver;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  background-color: #1e3a5f;
+  padding: 30px 0;
+  width: 98vw; /* full viewport width */
+  box-sizing: border-box;
+    border-radius: 12px; /* optional for rounded edges */
+ margin: 0 20px;
+}
+
+    .note {
+      text-align: center;
+      font-style: italic;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0px;
+  box-sizing: border-box;
+}
+
+/* Production cards */
+.production {
+  flex: 0 0 calc(50% - 3px); /* two per row */
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+  min-height: 280px; /* bigger card */
+  margin-bottom: 20px;
+}
+
+  @media (max-width: 768px) {
+    .production {
+      flex: 0 0 100%; /* stack on mobile */
+    }
+  }
+.carousel {
+  width: 45%; /* slightly bigger */
+  height: 280px; /* bigger carousel */
+  overflow: hidden;
+  position: relative;
+}
+    .carousel img.active {
+  display: block;
+}
+
+   .carousel img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: none;
+}
+
+
+    .carousel img.active {
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+    .carousel button.prev {
+      left: 5px;
+    }
+
+    .carousel button.next {
+      right: 5px;
+    }
+
+ .details {
+  width: 55%; /* more space for text */
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.1em; /* slightly bigger text */
+}
+
+.details h3 {
+  margin: 5px 0;
+  color: #1e3a5f;
+  font-size: 1.5em; /* bigger */
+}
+
+.details p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.details strong {
+  color: #2b4c7e;
+}
+
+    footer {
+      text-align: center;
+      color: #333;
+      font-size: 0.9em;
+      padding: 15px 0;
+    }
+
+@media (max-width: 768px) {
+  .production {
+    flex: 0 0 100%; /* stack on mobile */
+    flex-direction: column;
+    min-height: 300px;
+  }
+
+  .carousel, .details {
+    width: 100%;
+  }
+
+  .carousel img {
+    height: 280px;
+  }
+
+  .details {
+    font-size: 1.1em;
+    padding: 20px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>Gavin Dunn</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#" class="active">Portfolio</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="title">PORTFOLIO</div>
+    <p class="note">Productions are listed in reverse chronological order (most recent first)</p>
+
+    <div class="grid">
+      <!-- Example Production Card -->
+      <div class="production">
+        <div class="carousel">
+          <img src="img/example1.jpg" class="active" alt="Production Image 1">
+          <img src="img/example2.jpg" alt="Production Image 2">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <div class="details">
+          <h3>Production Title</h3>
+          <p><strong>Company:</strong> </p>
+          <p><strong>Role:</strong> </p>
+          <p><strong>Description:</strong> </p>
+          <p><strong>Technical Elements:</strong> </p>
+        </div>
+      </div>
+
+      <div class="production">
+        <div class="carousel">
+          <img src="img/example1.jpg" class="active" alt="Production Image 1">
+          <img src="img/example2.jpg" alt="Production Image 2">
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+        <div class="details">
+          <h3>Production Title</h3>
+          <p><strong>Company:</strong> </p>
+          <p><strong>Role:</strong> </p>
+          <p><strong>Description:</strong> </p>
+          <p><strong>Technical Elements:</strong> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Gavin Dunn | All Rights Reserved
+  </footer>
+
+  <script>
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+      const images = carousel.querySelectorAll('img');
+      const prevBtn = carousel.querySelector('.prev');
+      const nextBtn = carousel.querySelector('.next');
+      let index = 0;
+
+      prevBtn.addEventListener('click', () => {
+        images[index].classList.remove('active');
+        index = (index - 1 + images.length) % images.length;
+        images[index].classList.add('active');
+      });
+
+      nextBtn.addEventListener('click', () => {
+        images[index].classList.remove('active');
+        index = (index + 1) % images.length;
+        images[index].classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
