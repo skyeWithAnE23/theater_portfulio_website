@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Gavin Dunn</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #c8c8c8;
+      color: #0d1b2a;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1e3a5f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1.8em;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #2b4c7e;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      font-size: 1.1em;
+      transition: all 0.2s ease-in-out;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav a.active {
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 100%;
+      margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 3em;
+      color: silver;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      background-color: #1e3a5f;
+      padding: 30px 0;
+      width: 98vw;
+      box-sizing: border-box;
+      border-radius: 12px;
+      margin: 0 20px;
+    }
+
+    .resume {
+      background-color: #2b4c7e;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+	  margin-top: 30px;
+      transition: background-color 0.3s;
+    }
+
+    .resume:hover {
+      background-color: #1e3a5f;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    .photo {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      width: 30%;
+      min-width: 300px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .photo .caption {
+      padding: 15px;
+      font-size: 1em;
+      color: #0d1b2a;
+      background-color: #f3f4f6;
+    }
+
+    footer {
+      text-align: center;
+      color: #333;
+      font-size: 0.9em;
+      padding: 15px 0;
+    }
+
+    @media (max-width: 768px) {
+      .photo {
+        width: 90%;
+      }
+
+      .photo img {
+        height: 200px;
+      }
+
+      .resume {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Gavin Dunn</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="title">GALLERY</div>
+
+    <a href="files/GavinDunn_Resume.pdf" class="resume" download>📄 Download My Resume</a>
+
+    <div class="gallery">
+      <div class="photo">
+        <img src="img/gallery1.jpg" alt="Design Sketch">
+        <div class="caption">Set design concept sketch for a recent production.</div>
+      </div>
+
+      <div class="photo">
+        <img src="img/gallery2.jpg" alt="Script Notes">
+        <div class="caption">Annotated script pages and blocking notes.</div>
+      </div>
+
+      <div class="photo">
+        <img src="img/gallery3.jpg" alt="Behind the Scenes">
+        <div class="caption">Backstage setup during lighting rehearsal.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Gavin Dunn | All Rights Reserved
+  </footer>
+</body>
+</html>
