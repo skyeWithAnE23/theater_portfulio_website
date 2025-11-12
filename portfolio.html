@@ -96,6 +96,7 @@
   overflow: hidden;
   min-height: 280px; /* bigger card */
   margin-bottom: 20px;
+  align-items: stretch;
 }
 
   @media (max-width: 768px) {
@@ -105,7 +106,8 @@
   }
 .carousel {
   width: 45%; /* slightly bigger */
-  height: 280px; /* bigger carousel */
+  flex: 1 1 45%; /* keep width ratio */
+  height: auto;
   overflow: hidden;
   position: relative;
 }
@@ -115,7 +117,7 @@
 
    .carousel img {
   width: 100%;
-  height: 280px;
+  height: 100%;
   object-fit: cover;
   display: none;
 }
@@ -255,7 +257,7 @@
 		  <img src="UT2.png" alt="Production Image 2">
           <img src="UT3.png" alt="Production Image 3">
 		  <img src="UT4.png" alt="Production Image 4">
-          <img src="UT5.png" alt="Production Image 5">
+          <img src="Ut5.png" alt="Production Image 5">
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
         </div>
@@ -270,11 +272,11 @@
 
       <div class="production">
         <div class="carousel">
-          <img src="BJ1.png" class="active" alt="Production Image 1">
-		  <img src="BJ2.png" alt="Production Image 2">
-          <img src="BJ3.png" alt="Production Image 3">
-		  <img src="BJ4.png" alt="Production Image 4">
-          <img src="BJ5.png" alt="Production Image 5">
+          <img src="BJ1.jpeg" class="active" alt="Production Image 1">
+		  <img src="BJ2.jpeg" alt="Production Image 2">
+          <img src="BJ3.jpeg" alt="Production Image 3">
+		  <img src="BJ4.jpeg" alt="Production Image 4">
+          <img src="BJ5.jpeg" alt="Production Image 5">
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
         </div>
@@ -290,9 +292,9 @@
         <div class="carousel">
           <img src="hadestown1.jpeg" class="active" alt="Production Image 1">
 		  <img src="hadestown2.jpeg" alt="Production Image 2">
-          <img src="hadestown3.jpeg" alt="Production Image 3">
-		  <img src="hadestown4.jpeg" alt="Production Image 4">
-          <img src="hadestown5.jpeg" alt="Production Image 5">
+          <img src="hadestwon3.jpeg" alt="Production Image 3">
+		  <img src="hadestwon4.jpeg" alt="Production Image 4">
+          <img src="hadestwon5.jpeg" alt="Production Image 5">
 		  <img src="hadestown6.jpeg" alt="Production Image 6">
           <img src="hadestown7.jpeg" alt="Production Image 7">
 		  <img src="hadestown8.jpeg" alt="Production Image 8">
@@ -365,13 +367,13 @@
       </div>
 	  <div class="production">
         <div class="carousel">
-          <img src="gg.jpg" class="active" alt="Production Image 1">
-		  <img src="gg.jpg" alt="Production Image 2">
-          <img src="gg.jpg" alt="Production Image 3">
-		  <img src="gg.jpg" alt="Production Image 4">
-          <img src="gg.jpg" alt="Production Image 5">
-		  <img src="gg.jpg" alt="Production Image 6">
-          <img src="gg.jpg" alt="Production Image 7">
+          <img src="gg1.jpg" class="active" alt="Production Image 1">
+		  <img src="gg2.jpg" alt="Production Image 2">
+          <img src="gg3.jpg" alt="Production Image 3">
+		  <img src="gg4.jpg" alt="Production Image 4">
+          <img src="gg5.jpg" alt="Production Image 5">
+		  <img src="gg6.jpg" alt="Production Image 6">
+          <img src="gg7.jpg" alt="Production Image 7">
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
         </div>
@@ -406,11 +408,11 @@
       </div>
 	  <div class="production">
         <div class="carousel">
-          <img src="FN.jpg" class="active" alt="Production Image 1">
-		  <img src="FN.jpg" alt="Production Image 2">
-          <img src="FN.jpg" alt="Production Image 3">
-		  <img src="FN.jpg" alt="Production Image 4">
-          <img src="FN.jpg" alt="Production Image 5">
+          <img src="FN1.jpg" class="active" alt="Production Image 1">
+		  <img src="FN2.jpg" alt="Production Image 2">
+          <img src="FN3.jpg" alt="Production Image 3">
+		  <img src="FN4.jpg" alt="Production Image 4">
+          <img src="FN5.jpg" alt="Production Image 5">
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
         </div>
@@ -520,7 +522,7 @@
       </div>
 	  <div class="production">
         <div class="carousel">
-          <img src="ouam1.jpeg" class="active" alt="Production Image 1">
+          <img src="ouam.jpeg" class="active" alt="Production Image 1">
 		  <img src="ouam2.jpeg" alt="Production Image 2">
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
@@ -536,15 +538,15 @@
 
       <div class="production">
         <div class="carousel">
-          <img src="ST1.jpg" class="active" alt="Production Image 1">
-		  <img src="ST2.jpg" alt="Production Image 2">
-          <img src="ST3.jpg" alt="Production Image 3">
-		  <img src="ST4.jpg" alt="Production Image 4">
-          <img src="ST5.jpg" alt="Production Image 5">
-		  <img src="ST6.jpg" alt="Production Image 6">
-          <img src="ST7.jpg" alt="Production Image 7">
-		  <img src="ST8.jpg" alt="Production Image 8">
-          <img src="ST9.jpg" alt="Production Image 9">
+          <img src="St1.jpg" class="active" alt="Production Image 1">
+		  <img src="st2.jpg" alt="Production Image 2">
+          <img src="st3.jpg" alt="Production Image 3">
+		  <img src="st4.jpg" alt="Production Image 4">
+          <img src="st5.jpg" alt="Production Image 5">
+		  <img src="st6.jpg" alt="Production Image 6">
+          <img src="st7.jpg" alt="Production Image 7">
+		  <img src="st8.jpg" alt="Production Image 8">
+          <img src="st9.jpg" alt="Production Image 9">
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
         </div>
