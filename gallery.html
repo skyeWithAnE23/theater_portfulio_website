@@ -96,6 +96,7 @@
       gap: 25px;
       max-width: 1200px;
       padding: 0 20px;
+      overflow: visible;
     }
 
     .photo {
@@ -113,6 +114,12 @@
       width: 100%;
       height: 250px;
       object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .photo img:hover {
+      transform: scale(1.02);
     }
 
     .photo .caption {
@@ -215,10 +222,26 @@
   <footer>
     &copy; 2025 Gavin Dunn | All Rights Reserved
   </footer>
+
+  <!-- Fullscreen Modal -->
+  <div id="imageModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:9999;">
+    <img id="modalImage" src="" alt="Full Image" style="max-width:90%; max-height:90%; border-radius:10px;">
+  </div>
+
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+
+    document.querySelectorAll(".photo img").forEach(img => {
+      img.addEventListener("click", () => {
+        modalImg.src = img.src;
+        modal.style.display = "flex";
+      });
+    });
+
+    modal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  </script>
 </body>
 </html>
-
-
-
-
-
