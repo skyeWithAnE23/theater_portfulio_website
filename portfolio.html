@@ -656,7 +656,13 @@
     &copy; 2025 Gavin Dunn | All Rights Reserved
   </footer>
 
-  <script>
+ 
+
+  <div id="overlay">
+	<img src="" alt="Fullscreen Image">
+  </div>
+
+	 <script>
     const carousels = document.querySelectorAll('.carousel');
     carousels.forEach(carousel => {
       const images = carousel.querySelectorAll('img');
@@ -692,11 +698,11 @@ document.querySelectorAll('.carousel img').forEach(img => {
 overlay.addEventListener('click', () => {
   overlay.style.display = 'none';
 });
+		 if (prevBtn && nextBtn) {
+  prevBtn.addEventListener('click', () => { ... });
+  nextBtn.addEventListener('click', () => { ... });
+}
 
   </script>
-
-  <div id="overlay">
-	<img src="" alt="Fullscreen Image">
-  </div>
 </body>
 </html>
