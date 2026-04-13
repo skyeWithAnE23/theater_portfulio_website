@@ -662,14 +662,15 @@
 	<img src="" alt="Fullscreen Image">
   </div>
 
-	 <script>
-    const carousels = document.querySelectorAll('.carousel');
-    carousels.forEach(carousel => {
-      const images = carousel.querySelectorAll('img');
-      const prevBtn = carousel.querySelector('.prev');
-      const nextBtn = carousel.querySelector('.next');
-      let index = 0;
+<script>
+  const carousels = document.querySelectorAll('.carousel');
+  carousels.forEach(carousel => {
+    const images = carousel.querySelectorAll('img');
+    const prevBtn = carousel.querySelector('.prev');
+    const nextBtn = carousel.querySelector('.next');
+    let index = 0;
 
+    if (prevBtn && nextBtn) {
       prevBtn.addEventListener('click', () => {
         images[index].classList.remove('active');
         index = (index - 1 + images.length) % images.length;
@@ -681,28 +682,22 @@
         index = (index + 1) % images.length;
         images[index].classList.add('active');
       });
-    });
-
-	  const overlay = document.getElementById('overlay');
-const overlayImg = overlay.querySelector('img');
-
-// Open image in fullscreen when clicked
-document.querySelectorAll('.carousel img').forEach(img => {
-  img.addEventListener('click', () => {
-    overlayImg.src = img.src;
-    overlay.style.display = 'flex';
+    }
   });
-});
 
-// Close overlay when clicking anywhere on it
-overlay.addEventListener('click', () => {
-  overlay.style.display = 'none';
-});
-		 if (prevBtn && nextBtn) {
-  prevBtn.addEventListener('click', () => { ... });
-  nextBtn.addEventListener('click', () => { ... });
-}
+  const overlay = document.getElementById('overlay');
+  const overlayImg = overlay.querySelector('img');
 
-  </script>
+  document.querySelectorAll('.carousel img').forEach(img => {
+    img.addEventListener('click', () => {
+      overlayImg.src = img.src;
+      overlay.style.display = 'flex';
+    });
+  });
+
+  overlay.addEventListener('click', () => {
+    overlay.style.display = 'none';
+  });
+</script>
 </body>
 </html>
